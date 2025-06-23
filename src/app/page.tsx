@@ -171,7 +171,7 @@ export default function Page() {
 
       {/* Paragraph */}
       <p className="text-muted-foreground mb-6 max-w-md">
-        Have a question or want to work together? Fill out the form below and I'll get back to you!
+        Have a question or want to work together? Fill out the form below and I&apos;ll get back to you!
       </p>
     </div>
 
