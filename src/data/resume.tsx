@@ -13,18 +13,28 @@ export const DATA = {
     "I am a final-year B.Tech student at IIIT Ranchi, specializing in cutting-edge technology and passionate about innovation. With hands-on experience in projects and strong problem-solving skills, I am eager to contribute to impactful tech solutions. I thrive in collaborative environments and am driven to continuously learn and grow in the ever-evolving field of technology.",
   avatarUrl: "me.jpg",
   skills: [
-    "React",
+    // 
+    "React.js",
     "Next.js",
     "Typescript",
     "Node.js",
     "Javascript",
-    
-    
-    "Postgres",
+    "Express.js",
+    "CSS",
+    "HTML",
+    "MongoDB",
+    "MySQL",
+    "PostgresSQL",
     "Docker",
-    
-    
+    "AWS",
+    "Cloudflare",
+    "C",
     "C++",
+    "Git",
+    "Github",
+    "Postman",
+    "Figma",
+     "Bootstrap",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -111,19 +121,20 @@ export const DATA = {
     {
       title: "  SensAi",
       href: "https://sens-ai-five.vercel.app/",
-      dates: "Jan 2024 - Feb 2024",
+      dates: "June 2025",
       active: true,
       description:
-        "",
+        "Developed an AI-powered career coach that helps users explore career paths, build resumes, and prepare for interviews by offering personalized guidance and resources.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
+        "Node.js",
+        "Inngest",
         "Prisma",
+        "Neondb",
+        "Clerk Auth",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
+        
       ],
       links: [
         {
@@ -144,19 +155,20 @@ export const DATA = {
     {
       title: "Fitron-AI",
       href: "https://fitronai.vercel.app/",
-      dates: "June 2023 - Present",
+      dates: "May 2025",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "An AI-based fitness and diet plan generator that creates personalized workout routines and meal plans based on user goals and fitness requirements.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Node.js",
+        "Convex",
+        "Vapi AI",
+        "Gemini AI",
+        "Clerk Auth",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
+        
       ],
       links: [
         {
@@ -174,22 +186,21 @@ export const DATA = {
       video: "",
     },
     {
-      title: " Trimmr",
+      title: " Trimrr",
       href: "https://trimrr-coral.vercel.app/",
-      dates: "April 2023 - September 2023",
+      dates: "May 2025",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "A simple and efficient URL shortener app that lets users create short, shareable links from long URLs. Built with a clean interface and tracks basic analytics like click count.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+       "React.js",
+       "Node.js",
+       "Supabase",
+       "OAuth",
+       "Reacharts",
+       "Yup",
+       "TailwindCSS",
+       "ShadcnUI",
       ],
       links: [
         {
@@ -209,20 +220,17 @@ export const DATA = {
     {
       title: "Chessly",
       href: "https://chessly-2.onrender.com/",
-      dates: "April 2023 - March 2024",
+      dates: "April 2025",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "A minimal multiplayer chess website where users can join or create a game room and play chess in real time with another player, using a clean and responsive interface.",
       technologies: [
         "Next.js",
+        "React.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Websockets",
         "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Chess.js",
       ],
       links: [
         {
