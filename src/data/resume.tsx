@@ -8,7 +8,7 @@ export const DATA = {
   location: "Ranchi, India",
   locationLink: "https://www.google.com/maps/place/india",
   description:
-    "Final year ECE undergrad at IIIT Ranchi. Tech enthusiast, Problem solver and Collaborative team player",
+    "Final year ECE undergrad at IIIT Ranchi. Tech enthusiast, Problem solver, Quick learner and Collaborative team player",
   summary:
     "I am a final-year B.Tech student at IIIT Ranchi, specializing in cutting-edge technology and passionate about innovation. With hands-on experience in projects and strong problem-solving skills, I am eager to contribute to impactful tech solutions. I thrive in collaborative environments and am driven to continuously learn and grow in the ever-evolving field of technology.",
   avatarUrl: "me.jpg",
@@ -38,7 +38,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "https://drive.google.com/file/d/1GPJ-X0Z_bLn-CzJhODRTI1zHgXZLHY6u/view?usp=sharing" , icon: NotebookIcon, label: "Resume" },
+    { href: "https://drive.google.com/file/d/1GPJ-X0Z_bLn-CzJhODRTI1zHgXZLHY6u/view?usp=drive_link" , icon: NotebookIcon, label: "Resume" },
   ],
   contact: {
     email: "hello@example.com",
