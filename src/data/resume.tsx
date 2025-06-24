@@ -93,7 +93,7 @@ export const DATA = {
       start: "May 2025",
       end: "Present",
       description:
-        "Made sign up and sign in dashboard with user interactive UI and many other features",
+        "Contributed to transforming UI/UX design prototypes into fully responsive, production-ready interfaces, ensuring  precision and responsiveness. Worked closely with senior developers to implement UI components and fix bugs, gaining hands-on experience with modern frontend workflows.",
     },
    
   ],
