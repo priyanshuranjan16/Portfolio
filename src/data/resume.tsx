@@ -8,7 +8,7 @@ export const DATA = {
   location: "Ranchi, India",
   locationLink: "https://www.google.com/maps/place/india",
   description:
-    "Final year ECE undergrad at IIIT Ranchi. Tech enthusiast, Problem solver, Quick learner and Collaborative team player",
+    "Full stack developer based in India. Tech enthusiast, Problem solver, Quick learner and Collaborative team player",
   summary:
     "I am a final-year B.Tech student at IIIT Ranchi, specializing in cutting-edge technology and passionate about innovation. With hands-on experience in projects and strong problem-solving skills, I am eager to contribute to impactful tech solutions. I thrive in collaborative environments and am driven to continuously learn and grow in the ever-evolving field of technology.",
   avatarUrl: "me.jpg",
