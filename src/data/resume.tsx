@@ -119,7 +119,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "  SensAi",
+      title: "SensAi",
       href: "https://sens-ai-five.vercel.app/",
       dates: "June 2025",
       active: true,
