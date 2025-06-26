@@ -38,7 +38,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "https://drive.google.com/file/d/1GPJ-X0Z_bLn-CzJhODRTI1zHgXZLHY6u/view?usp=drive_link" , icon: NotebookIcon, label: "Resume" },
+    { href: "https://drive.google.com/file/d/1GPJ-X0Z_bLn-CzJhODRTI1zHgXZLHY6u/view?usp=sharing" , icon: NotebookIcon, label: "Resume" },
   ],
   contact: {
     email: "hello@example.com",
@@ -91,7 +91,7 @@ export const DATA = {
       title: "Frontend Developer",
       logoUrl: "/alpixnlogo.jpeg",
       start: "May 2025",
-      end: "Present",
+      end: "June 2025",
       description:
         "Contributed to transforming UI/UX design prototypes into fully responsive, production-ready interfaces, ensuring  precision and responsiveness. Worked closely with senior developers to implement UI components and fix bugs, gaining hands-on experience with modern frontend workflows.",
     },
