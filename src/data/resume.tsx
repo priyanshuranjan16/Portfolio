@@ -36,9 +36,10 @@ export const DATA = {
     "Figma",
      "Bootstrap",
   ],
+  
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "https://drive.google.com/file/d/1GPJ-X0Z_bLn-CzJhODRTI1zHgXZLHY6u/view?usp=sharing" , icon: NotebookIcon, label: "Resume" },
+    { href: "https://drive.google.com/file/d/1GPJ-X0Z_bLn-CzJhODRTI1zHgXZLHY6u/view?usp=drive_link" , icon: NotebookIcon, label: "Resume" },
   ],
   contact: {
     email: "hello@example.com",
