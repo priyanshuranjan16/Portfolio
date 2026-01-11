@@ -11,6 +11,7 @@ export const DATA = {
     "Full stack developer based in India. Tech enthusiast, Problem solver, Quick learner and Collaborative team player",
   summary:
     "I am a final-year B.Tech student at IIIT Ranchi, specializing in cutting-edge technology and passionate about innovation. With hands-on experience in projects and strong problem-solving skills, I am eager to contribute to impactful tech solutions. I thrive in collaborative environments and am driven to continuously learn and grow in the ever-evolving field of technology.",
+  birthDate: "2003-04-16",
   avatarUrl: "me.jpg",
   skills: [
     // 
@@ -34,15 +35,15 @@ export const DATA = {
     "Github",
     "Postman",
     "Figma",
-     "Bootstrap",
+    "Bootstrap",
   ],
-  
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "https://drive.google.com/file/d/1YemxBhYObf__xDH0R2RzmMDmKPiJOx07/view?usp=sharing" , icon: NotebookIcon, label: "Resume" },
+    { href: "https://drive.google.com/file/d/1YemxBhYObf__xDH0R2RzmMDmKPiJOx07/view?usp=sharing", icon: NotebookIcon, label: "Resume" },
   ],
   contact: {
-    email: "hello@example.com",
+    email: "priyanshu.iiitr@gmail.com",
     tel: "+123456789",
     social: {
       GitHub: {
@@ -68,8 +69,8 @@ export const DATA = {
       },
       LeetCode: {
         name: "LeetCode",
-        url: "https://leetcode.com/blade_xd", 
-        icon: Icons.leetcode, 
+        url: "https://leetcode.com/blade_xd",
+        icon: Icons.leetcode,
         navbar: true,
       },
 
@@ -93,10 +94,12 @@ export const DATA = {
       logoUrl: "/alpixnlogo.jpeg",
       start: "May 2025",
       end: "June 2025",
-      description:
-        "Contributed to transforming UI/UX design prototypes into fully responsive, production-ready interfaces, ensuring  precision and responsiveness. Worked closely with senior developers to implement UI components and fix bugs, gaining hands-on experience with modern frontend workflows.",
+      description: [
+        "Contributed to transforming UI/UX design prototypes into fully responsive, production-ready interfaces, ensuring precision and responsiveness.",
+        "Worked closely with senior developers to implement UI components and fix bugs, gaining hands-on experience with modern frontend workflows.",
+      ],
     },
-   
+
   ],
   education: [
     {
@@ -115,8 +118,8 @@ export const DATA = {
       start: "2019",
       end: "2021",
     },
-    
-    
+
+
   ],
   projects: [
     {
@@ -135,7 +138,7 @@ export const DATA = {
         "Clerk Auth",
         "TailwindCSS",
         "Shadcn UI",
-        
+
       ],
       links: [
         {
@@ -169,7 +172,7 @@ export const DATA = {
         "Clerk Auth",
         "TailwindCSS",
         "Shadcn UI",
-        
+
       ],
       links: [
         {
@@ -194,14 +197,14 @@ export const DATA = {
       description:
         "A simple and efficient URL shortener app that lets users create short, shareable links from long URLs. Built with a clean interface and tracks basic analytics like click count.",
       technologies: [
-       "React.js",
-       "Node.js",
-       "Supabase",
-       "OAuth",
-       "Reacharts",
-       "Yup",
-       "TailwindCSS",
-       "ShadcnUI",
+        "React.js",
+        "Node.js",
+        "Supabase",
+        "OAuth",
+        "Reacharts",
+        "Yup",
+        "TailwindCSS",
+        "ShadcnUI",
       ],
       links: [
         {
@@ -250,5 +253,5 @@ export const DATA = {
         "",
     },
   ],
- 
+
 } as const;
