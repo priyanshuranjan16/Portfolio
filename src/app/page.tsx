@@ -2,6 +2,8 @@
 
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { TechPile } from "@/components/tech-pile";
+import { TechStack } from "@/components/tech-stack";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -10,32 +12,54 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
+import { ConversationCta } from "@/components/conversation-cta";
+
 const BLUR_FADE_DELAY = 0.04;
+import { TimeAlive } from "@/components/time-alive";
+
+import Particles from "@/components/magicui/particles";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function Page() {
+  const { theme } = useTheme();
+  const [color, setColor] = useState("#ffffff");
+
+  useEffect(() => {
+    setColor(theme === "dark" ? "#ffffff" : "#000000");
+  }, [theme]);
+
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 relative">
+      <Particles
+        className="absolute inset-0 -z-10 animate-fade-in"
+        quantity={500}
+        ease={80}
+        color={color}
+        refresh
+      />
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
-              />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+        <div className="mx-auto w-full max-w-4xl space-y-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="flex-col flex flex-1 space-y-4">
+              <div className="relative">
+                <h1 className="text-3xl font-semibold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  {DATA.name}
+                </h1>
+              </div>
             </div>
+
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+              <div className="flex flex-col items-end text-right">
+                <span className="text-xs font-bold tracking-widest text-muted-foreground uppercase mb-1">
+                  ON EARTH FOR
+                </span>
+                <div className="flex items-baseline gap-2">
+                  {/* @ts-ignore */}
+                  <TimeAlive birthDate={DATA.birthDate} />
+                  <span className="text-lg md:text-xl text-muted-foreground font-medium">years</span>
+                </div>
+              </div>
             </BlurFade>
           </div>
         </div>
@@ -103,12 +127,13 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-full min-h-[400px]">
+            <BlurFade delay={BLUR_FADE_DELAY * 10} className="h-full">
+              <TechPile />
+            </BlurFade>
+            <BlurFade delay={BLUR_FADE_DELAY * 11} className="h-full">
+              <TechStack />
+            </BlurFade>
           </div>
         </div>
       </section>
@@ -155,75 +180,11 @@ export default function Page() {
       </section>
 
 
-     <section id="contact" className="px-4 max-w-2xl mx-auto w-full pb-20">
-  <BlurFade delay={BLUR_FADE_DELAY * 13}>
-    {/* Centered container */}
-    <div className="flex flex-col items-center text-center">
-      {/* Contact Me Pill */}
-      <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-2">
-        Contact Me
-      </div>
-
-      {/* Heading */}
-      <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          Reach out to me
-      </h2>
-
-      {/* Paragraph */}
-      <p className="text-muted-foreground mb-6 max-w-md">
-        Have a question or want to work together? Fill out the form below and I&apos;ll get back to you!
-      </p>
-    </div>
-
-    {/* Form */}
-    <form
-  action="https://getform.io/f/bkknrqgb" // ← replace with your Getform form URL
-  method="POST"
-  className="space-y-4"
->
-  <div>
-    <label className="block text-sm font-medium mb-1">Name</label>
-    <input
-      type="text"
-      name="name"
-      required
-      className="w-full border border-gray-400 rounded-md px-3 py-2 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-    />
-  </div>
-
-  <div>
-    <label className="block text-sm font-medium mb-1">Email</label>
-    <input
-      type="email"
-      name="email"
-      required
-      className="w-full border border-gray-400 rounded-md px-3 py-2 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-    />
-  </div>
-
-  <div>
-    <label className="block text-sm font-medium mb-1">Message</label>
-    <textarea
-      name="message"
-      required
-      rows={5}
-      className="w-full border border-gray-400 rounded-md px-3 py-2 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-    ></textarea>
-  </div>
-
-  <div className="flex justify-center">
-    <button
-      type="submit"
-      className="px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition"
-    >
-      Send Message
-    </button>
-  </div>
-</form>
-
-  </BlurFade>
-</section>
-
-</main>
+      <section id="contact" className="px-4 max-w-2xl mx-auto w-full pb-10">
+        <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <ConversationCta />
+        </BlurFade>
+      </section>
+    </main>
   );
 }
