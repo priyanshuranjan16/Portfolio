@@ -123,19 +123,19 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "SensAi",
-      href: "https://sens-ai-five.vercel.app/",
-      dates: "June 2025",
+      title: "CodeForge",
+      href: "https://codeforge-amber.vercel.app/",
+      dates: "Nov 2025",
       active: true,
       description:
         "Developed an AI-powered career coach that helps users explore career paths, build resumes, and prepare for interviews by offering personalized guidance and resources.",
       technologies: [
         "Next.js",
         "Node.js",
-        "Inngest",
-        "Prisma",
-        "Neondb",
-        "Clerk Auth",
+        "Express",
+        "Typescript",
+        "PostgreSQL",
+        "Drizzle",
         "TailwindCSS",
         "Shadcn UI",
 
@@ -143,16 +143,16 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://sens-ai-five.vercel.app/",
+          href: "https://codeforge-amber.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/priyanshuranjan16/SensAI",
+          href: "https://github.com/priyanshuranjan16/CodeForge",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/sensai_bg.jpg",
+      image: "/codeforge_bg.png",
       video:
         "",
     },
